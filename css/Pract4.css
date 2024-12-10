@@ -1,0 +1,190 @@
+.keyboard {
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+    background-color: #dfb5f5;
+    border-radius: 10px;
+    margin: 0 auto;
+    zoom: 2;
+}
+
+.key_row
+{
+    display: flex;
+    gap: 8px;
+}
+
+.key {
+    background-color: #c181e7;
+    border: 1px solid #3b0b72;
+    border-radius: 5px;
+    /* padding: 10px; */
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 2px 1px rgb(20, 20, 20);
+    color: rgb(0, 0, 0);
+    transform-origin: center;
+    overflow-wrap: break-word;
+}
+
+.key_fkeys
+{
+    height: 24px;
+    padding: 2px;
+    width: 35px;
+    font-size: 8px;
+}
+
+.esc
+{
+    width: 40px;
+    font-size: 8px;
+    /* text-align: left; */
+}
+
+.tab
+{
+    width: 66px;
+}
+
+.caps
+{
+    width: 77px;
+}
+
+.shift
+{
+    width: 101px;
+}
+
+.space
+{
+    width: 232px;
+}
+
+.tall
+{
+    height: 45px;
+}
+
+.ctrll
+{
+    width: 53px;
+}
+
+.gap
+{
+    margin-left: 8px;
+}
+
+.small_text
+{
+    font-size: 10px;
+}
+
+.arrow
+{
+    width: 44px;
+}
+
+.key:hover
+{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.key:active
+{
+    /* background-color: #aaa; */
+    /* transform: translateY(1px) translateX(1px);  */
+    scale: 0.95;
+    box-shadow: 1px 1px 2px 2px rgb(20, 20, 20);
+    /* box-shadow: 0 2px #666; */
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c7c7c7;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+.kcont
+{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: #6439c1;
+    box-shadow: inset 0px 0px 10px;
+    padding: 10px;
+    border: 1px solid #c551f3;
+    border-radius: 30px;
+}
+
+.kb1
+{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 0px;
+}
+.kb2
+{
+    margin-left: -1px;
+    padding-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+textarea
+{
+    width: 300px;
+    height: 150px;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+textarea:disabled
+{
+    background-color: rgb(156, 156, 156);
+}
+
+.numtall
+{
+    height: 88px;
+}
+
+.numpad
+{
+    width: 35px;
+}
+
+.zeronp
+{
+    width: 78px;
+    margin-left: 9px;
+}
+
+.enter
+{
+    font-size: 8px;
+}
+
+.text_left
+{
+    text-align: left;
+}
+
+.text_right
+{
+    text-align: right;
+}
+
+.helpme
+{
+    font-size: 6px;
+}
