@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'blocks/header';
+@import 'blocks/card';
+@import 'blocks/footer';
+
+.page {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}

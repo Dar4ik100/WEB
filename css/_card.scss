@@ -1,0 +1,20 @@
+.card {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 500px;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    &__image {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__text {
+        padding: 20px;
+        font-size: $font-size;
+        color: $primary-color;
+    }
+}
