@@ -1,22 +1,42 @@
-/* styles.css */
+/* Загальні стилі */
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #eaeaea;
+    background-color: #edfdbc;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#text-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
 }
 
 .keyboard {
     display: flex;
+    gap: 20px;
+    background: #d857e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(62, 4, 92, 0.999); /* Тінь на обводку клавіатури */
+}
+
+/* Основна клавіатура */
+.main-section {
+    display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .row {
@@ -28,53 +48,47 @@ body {
 .key {
     padding: 10px 15px;
     font-size: 14px;
-    font-weight: bold;
-    text-align: center;
     border: none;
     border-radius: 5px;
-    background-color: #f4f4f4;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fea2ea;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease; /* Додав тінь на клавіші */
+    box-shadow: 0 2px 5px rgb(141, 10, 134); /* Тінь для клавіші */
 }
 
 .key:hover {
-    background-color: #dcdde1;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
 }
 
 .key:active {
-    background-color: #a4b0be;
+    background-color: #272727;
     transform: scale(0.95);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Тінь при натисканні */
 }
 
-.key.space {
-    flex: 4;
-}
-
-.key.enter, 
-.key.backspace, 
-.key.tab, 
-.key.capslock, 
-.key.shift, 
-.key.ctrl {
-    flex: 1.5;
-    text-align: center;
-}
-
-.key.shift {
+.key.enter, .key.space {
     flex: 2;
 }
 
-.key.win {
-    background-color: #0078d7;
-    color: #ffffff;
-    border: 1px solid #0063b1;
+.key.shift, .key.ctrl, .key.capslock {
+    flex: 1.5;
 }
 
-.key.win:hover {
-    background-color: #005a9e;
+/* Бічний блок */
+.side-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.key.win:active {
-    background-color: #004a85;
+.arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.arrows .row {
+    gap: 5px;
 }

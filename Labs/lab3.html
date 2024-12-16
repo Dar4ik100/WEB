@@ -3,63 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyboard</title>
-    <link rel="stylesheet" href="../css/Pract4.css">
-    <style>
-        /* Доданий CSS без окремого файлу */
-        .small {
-            height: 20px; /* Зменшена висота */
-            width: 44px;  /* Ширина клавіш */
-            font-size: 12px;
-        }
-        .key_column {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-    </style>
+    <title>BeeTube</title>
+    <link rel="stylesheet" href="../css/lab3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="output">
-        <textarea disabled id="display">Print here</textarea>
+    <div class="header">
+        <div class="logo">BeeTube</div>
+        <div class="search-container">
+            <input class="search-bar" type="text" placeholder="Введіть запит">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+            <button class="voice-button"><i class="fas fa-microphone"></i></button>
+        </div>
+        <div class="icons">
+            <i class="fas fa-upload"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
     </div>
-    <div class="kcont">
-        <div class="keyboard kb1">
-            <!-- Верхній ряд -->
-            <div class="key_row">   
-                <button class="key key_fkeys esc">Esc</button>
-                <button class="key key_fkeys">F1</button>
-                <button class="key key_fkeys">F2</button>
-                <button class="key key_fkeys">F3</button>
-                <button class="key key_fkeys">F4</button>
-                <button class="key key_fkeys">F5</button>
-                <button class="key key_fkeys">F6</button>
-                <button class="key key_fkeys">F7</button>
-                <button class="key key_fkeys">F8</button>
-                <button class="key key_fkeys">F9</button>
-                <button class="key key_fkeys">F10</button>
-                <button class="key key_fkeys">F11</button>
-                <button class="key key_fkeys">F12</button>
-                <button class="key key_fkeys">PrtScr</button>
-                <button class="key key_fkeys">Insert</button>
-                <button class="key key_fkeys esc">Delete</button>
+    <div class="tabs">
+        <button class="tab active">Все</button>
+        <button class="tab">Музика</button>
+        <button class="tab">Відеоігри</button>
+        <button class="tab">Новини</button>
+        <button class="tab">Джеми</button>
+        <button class="tab">Сейчас в ефірі</button>
+        <button class="tab">Анімація</button>
+        <button class="tab">Екшн і пригоди</button>
+        <button class="tab">Minecraft</button>
+        <button class="tab">Нещодавно опубліковані</button>
+    </div>
+    <div class="sidebar">
+        <a href="#"><i class="fas fa-home"></i> Головна</a>
+        <a href="#"><i class="fas fa-film"></i> Shorts</a>
+        <a href="#"><i class="fas fa-stream"></i> Підписки</a>
+        <hr>
+        <a href="#"><i class="fas fa-history"></i> Исторія</a>
+        <a href="#"><i class="fas fa-folder"></i> Плейлісти</a>
+        <a href="#"><i class="fas fa-video"></i> Ваши відое</a>
+        <a href="#"><i class="fas fa-clock"></i> Дивитись пізніше</a>
+        <a href="#"><i class="fas fa-thumbs-up"></i> Подобайки</a>
+        <hr>
+        <a href="#"><i class="fas fa-user-friends"></i> Підписки</a>
+        <div class="subscribers">
+            <li>Recrent</li>
+            <li>S1mpl</li>
+            <li>Дима Маслеников</li>
+            <li>Yumeko</li>
+            <li>Dar4ik</li>
+           
+        </div>
+    </div>
+    <div class="main">
+        <div class="video">
+            <img src="C:\Users\Dara\Desktop\Web\images\video1.png" alt="Thumbnail">
+            <div class="video-info">
+                <h3>Игры Масленникова - Останется только ОДИН блогер</h3>
+                <p>Дима Маслеников • 5.7M views • 5 дней назад</p>
             </div>
-
-            <!-- Стрілки і клавіші у нижньому ряду -->
-            <div class="key_row">
-                <button class="key ctrll tall small_text text_left">Ctrl</button>
-                <button class="key tall small_text">Fn</button>
-                <button class="key tall small_text">Win</button>
-                <button class="key tall small_text">Alt</button>
-                <button class="key space tall"></button>
-                <button class="key tall small_text">Alt</button>
-                <button class="key tall small_text">Ctrl</button>
-                <button class="key arrow small">&#8592;</button>
-                <div class="key_column">
-                    <button class="key arrow small">&#8593;</button>
-                    <button class="key arrow small">&#8595;</button>
-                </div>
-                <button class="key arrow small">&#8594;</button>
+        </div>
+        <div class="video">
+            <img src="C:\Users\Dara\Desktop\Web\images\video2.png" alt="Thumbnail">
+            <div class="video-info">
+                <h3>Рекрент вернулся в PUBG</h3>
+                <p>Recrent • 8.9K views • 5 дней назад</p>
+            </div>
+        </div>
+        <div class="video">
+            <img src="C:\Users\Dara\Desktop\Web\images\video3.png" alt="Thumbnail">
+            <div class="video-info">
+                <h3>Лучшие моменти Симпла за 2021</h3>
+                <p>S1mpl • 3.4M views • 3 года назад</p>
+            </div>
+        </div>
+        <div class="video">
+            <img src="C:\Users\Dara\Desktop\Web\images\video4.png" alt="Thumbnail">
+            <div class="video-info">
+                <h3>【PICO PARK 2】Chaotic Family! | VTuber Yumeko Ghost Cat</h3>
+                <p>Yumeko • 5.8K views • 11 месяцев назад</p>
+            </div>
+        </div>
+        <div class="video">
+            <img src="C:\Users\Dara\Desktop\Web\images\video5.png" alt="Thumbnail">
+            <div class="video-info">
+                <h3>Minecraft: Expect the unexpected</h3>
+                <p>Minecraft • 6.2M views • 11 месяцев назад</p>
             </div>
         </div>
     </div>

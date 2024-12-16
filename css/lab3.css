@@ -136,6 +136,102 @@ body {
 .video {
     display: flex;
     margin-bottom: 20px;
+}
+
+.video img {
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.video-info p {
+    margin: 5px 0 0;
+    color: #aaa;
+}
+
+
+.icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    background-color: #202020;
+    padding: 10px 0;
+    margin-top: 50px;
+    overflow-x: auto;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #303030;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.tab.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #202020;
+    padding: 10px 0;
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #303030;
+}
+
+.sidebar hr {
+    border: 0.5px solid #404040;
+    margin: 10px 0;
+}
+
+.main {
+    margin-left: 220px;
+    padding: 20px;
+    padding-top: 140px;
+    flex-grow: 1;
+}
+
+.video {
+    display: flex;
+    margin-bottom: 20px;
     background-color: #202020;
     padding: 10px;
     border-radius: 8px;
