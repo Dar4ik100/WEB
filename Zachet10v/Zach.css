@@ -1,0 +1,36 @@
+/* Основні стилі для сторінки */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #cfb2f6;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилі для блоку */
+.hover-block {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: all 0.3s ease;
+}
+
+/* Анімація та ефекти при наведенні */
+.hover-block:hover {
+    width: 150px;
+    height: 150px;
+    animation: rainbow 2s linear infinite; /* Анімація активується лише при наведенні */
+}
+
+/* Ключові кадри для райдужної анімації */
+@keyframes rainbow {
+    0% { background-color: red; }
+    16% { background-color: orange; }
+    33% { background-color: yellow; }
+    50% { background-color: green; }
+    66% { background-color: blue; }
+    83% { background-color: indigo; }
+    100% { background-color: violet; }
+}
