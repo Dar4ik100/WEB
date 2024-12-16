@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="../css/Pract4.css">
+    <style>
+        /* Доданий CSS без окремого файлу */
+        .small {
+            height: 20px; /* Зменшена висота */
+            width: 44px;  /* Ширина клавіш */
+            font-size: 12px;
+        }
+        .key_column {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="output">
+        <textarea disabled id="display">Print here</textarea>
+    </div>
+    <div class="kcont">
+        <div class="keyboard kb1">
+            <!-- Верхній ряд -->
+            <div class="key_row">   
+                <button class="key key_fkeys esc">Esc</button>
+                <button class="key key_fkeys">F1</button>
+                <button class="key key_fkeys">F2</button>
+                <button class="key key_fkeys">F3</button>
+                <button class="key key_fkeys">F4</button>
+                <button class="key key_fkeys">F5</button>
+                <button class="key key_fkeys">F6</button>
+                <button class="key key_fkeys">F7</button>
+                <button class="key key_fkeys">F8</button>
+                <button class="key key_fkeys">F9</button>
+                <button class="key key_fkeys">F10</button>
+                <button class="key key_fkeys">F11</button>
+                <button class="key key_fkeys">F12</button>
+                <button class="key key_fkeys">PrtScr</button>
+                <button class="key key_fkeys">Insert</button>
+                <button class="key key_fkeys esc">Delete</button>
+            </div>
+
+            <!-- Стрілки і клавіші у нижньому ряду -->
+            <div class="key_row">
+                <button class="key ctrll tall small_text text_left">Ctrl</button>
+                <button class="key tall small_text">Fn</button>
+                <button class="key tall small_text">Win</button>
+                <button class="key tall small_text">Alt</button>
+                <button class="key space tall"></button>
+                <button class="key tall small_text">Alt</button>
+                <button class="key tall small_text">Ctrl</button>
+                <button class="key arrow small">&#8592;</button>
+                <div class="key_column">
+                    <button class="key arrow small">&#8593;</button>
+                    <button class="key arrow small">&#8595;</button>
+                </div>
+                <button class="key arrow small">&#8594;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
